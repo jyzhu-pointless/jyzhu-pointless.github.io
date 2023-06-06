@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.staticfile.org/popper.js/2.9.3/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+    <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/sign-in/">
+    <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/dashboard/">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="./main.js?v=100"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
+    <title>Gene drive playground - Profile for Jinyu Zhu</title>
+</head>
+
+<body>
+    <div class="container-fluid pt-5 pb-3 bg-light text-dark text-center">
+        <h1 class="pb-2">Gene drive playground</h1>
+        <div class="container">
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a class="nav-link text-dark" href="..">Home</a></li>
+                <li class="nav-item"><a class="nav-link active bg-dark" aria-current="page" href=".">Playground</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container pt-3">
+        <button onclick="homing_suppression_drive_panmictic_demo()">Click Here</button>
+        <div class="chart-container" style="position: relative; height:40vh; width:80vw">
+            <canvas id="homing_suppression_drive_panmictic_demo_chart" width=400 height=400></canvas>
+        </div>
+        <div id="homing_suppression_drive_panmictic_demo_result" style="font-family: 'Courier New', Courier, monospace; word-break:break-all;overflow:hidden;"></div>
+    </div>
+
+</body>
+
+<script>
+    var ctx = document.getElementById("homing_suppression_drive_panmictic_demo_chart");
+    var x = [];
+    var homing_supp_pan_chart = new Chart(ctx, {
+        type: "line",
+        data: {
+            labels: x,
+            datasets: [{
+                label: "Size / capacity",
+                data: []
+            }, {
+                label: "Drive frequency",
+                data: []
+            }, {
+                label: "Resistance 2 frequency",
+                data: []
+            }, {
+                label: "Resistance 1 frequency",
+                data: []
+            }]
+        },
+        options: {
+            scales: {
+                xAxes: [{
+                    type: "linear",
+                    position: "bottom",
+                    ticks: {
+                        suggestedMin: 0,
+                        suggestedMax: 1
+                    }
+                }]
+            },
+            animation: {
+                duration: 0 // 一般动画时间
+            },
+            hover: {
+                animationDuration: 0 // 悬停项目时动画的持续时间
+            },
+            elements: {
+                line: {
+                    tension: 0 // 禁用贝塞尔曲线
+                }
+            },
+            responsiveAnimationDuration: 0 // 调整大小后的动画持续时间
+        }
+    });
+    var hsdp_output = document.getElementById("homing_suppression_drive_panmictic_demo_result");
+</script>
+
+</html>
