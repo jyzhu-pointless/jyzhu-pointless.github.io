@@ -1,3 +1,0 @@
-# Jinyu Zhu
-
-Welcome!
