@@ -12,6 +12,7 @@
     <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/sign-in/">
     <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/dashboard/">
     <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="./chart_config.js?v=100"></script>
     <script src="./main.js?v=100"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
     <title>Gene drive playground - Profile for Jinyu Zhu</title>
@@ -29,6 +30,11 @@
     </div>
 
     <div class="container pt-3">
+        <p>This is an online simulation interface for different types of gene drive and other population genetics control strategies. (Still building ...)</p>
+    </div>
+
+    <div class="container pt-3">
+        <h2>Homing suppression drive</h2>
         <button class="btn btn-success" id="hsdp" onclick="homing_suppression_drive_panmictic_demo()">Run simulation</button>
         <div class="chart-container" style="position: relative; height:40vh; width:80vw">
             <canvas id="homing_suppression_drive_panmictic_demo_chart" width=400 height=400></canvas>
@@ -37,54 +43,5 @@
     </div>
 
 </body>
-
-<script>
-    var ctx = document.getElementById("homing_suppression_drive_panmictic_demo_chart");
-    var x = [];
-    var homing_supp_pan_chart = new Chart(ctx, {
-        type: "line",
-        data: {
-            labels: x,
-            datasets: [{
-                label: "Size / capacity",
-                data: []
-            }, {
-                label: "Drive frequency",
-                data: []
-            }, {
-                label: "Resistance 2 frequency",
-                data: []
-            }, {
-                label: "Resistance 1 frequency",
-                data: []
-            }]
-        },
-        options: {
-            scales: {
-                xAxes: [{
-                    type: "linear",
-                    position: "bottom",
-                    ticks: {
-                        suggestedMin: 0,
-                        suggestedMax: 1
-                    }
-                }]
-            },
-            animation: {
-                duration: 0 // 一般动画时间
-            },
-            hover: {
-                animationDuration: 0 // 悬停项目时动画的持续时间
-            },
-            elements: {
-                line: {
-                    tension: 0 // 禁用贝塞尔曲线
-                }
-            },
-            responsiveAnimationDuration: 0 // 调整大小后的动画持续时间
-        }
-    });
-    var hsdp_output = document.getElementById("homing_suppression_drive_panmictic_demo_result");
-</script>
 
 </html>
