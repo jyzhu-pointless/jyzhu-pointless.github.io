@@ -1,47 +1,24 @@
 /**
  * @description: Gene drive demonstrations in HTML and JavaScript
  * @author: Jinyu Zhu
+ * @property: Rewrite with class simulation (may extend to a framework in the future)
  */
 
-// DOM
+/**
+ * @description: Output to dom functions
+ * @author: Jinyu Zhu
+ */
+
 function append_output(dom, text) {
     new_output = document.createElement('p');
     new_output.innerHTML = text;
     dom.appendChild(new_output);
 }
 
-// Public variables and functions
-class simulation {
-    constructor() {
-        // Definition of "population":
-        // population = { male: [], female: [] };
-        // The subarray are filled with "individual"s
-        this.population = { "male": [], "female": [] };
-        this.cycle = 0; // generation
-        this.population_size = 0;
-    }
-    get_population_size() {
-        this.population_size = population.male.length + population.female.length;
-        return this.population_size;
-    }
-};
-
-class individual {
-    constructor(sex, age, genotype) {
-        this.sex = sex;
-        this.age = age;
-        this.genotype = genotype;
-    }
-}
-var genotype_sort = { "d": 1, "R": 2, "r": 3, "+": 10 };
-
-var population = { "male": [], "female": [] };
-
-function get_population_size() {
-    return population.male.length + population.female.length;
-}
-
-var population_size = get_population_size();
+/**
+ * @description: Helper functions
+ * @author: Jinyu Zhu
+ */
 
 function random_int(minN, maxN) {
     return minN + Math.round(Math.random() * (maxN - minN));
@@ -64,6 +41,112 @@ function sample_without_replace(list, sample_size) {
     return ret;
 }
 
+/**
+ * @description: Class simulation
+ * @author: Jinyu Zhu
+ */
+
+class individual {
+    get fitness() {
+        if (this.genotype == "dd") return drive_fitness;
+        if (this.genotype == "d+" || this.genotype == "dr" || this.genotype == "dR") return Math.sqrt(drive_fitness);
+        return 1.0;
+    }
+    constructor(sex, age, genotype) {
+        this.sex = sex;
+        this.age = age;
+        this.genotype = genotype;
+    }
+    gamate_generation() {
+        // drive event
+        if (this.genotype == "d+") {
+            if (drive_efficiency >= Math.random()) {
+                return ["d", "d"];
+            } else if (resistance_2_formation_rate_if_not_converted >= Math.random()) {
+                return ["d", "r"];
+            } else if (resistance_1_formation_rate_if_not_resistance_2 >= Math.random()) {
+                return ["d", "R"];
+            } else return ["d", "+"];
+        }
+        return ind.genotype.split('');
+    }
+};
+
+class population {
+    constructor() {
+        this.male = [];
+        this.female = [];
+        this.population_size = 0;
+    }
+    get population_size() {
+        this.population_size = population.male.length + population.female.length;
+        return this.population_size;
+    }
+    initialize_population() {
+        for (var i = 1; i <= capacity / 2; i++) {
+            population.male.push(new individual("male", 0, "++"));
+            population.female.push(new individual("female", 0, "++"));
+        }
+    }
+    add_individual(ind) {
+        if (ind.sex == "male") {
+            this.male.append(ind);
+        } else if (ind.sex == "female") {
+            this.female.append(ind);
+        }
+        get_population_size();
+    }
+    age_increase() {
+        for (var i in population.male) {
+            population.male[i].age++;
+        }
+        for (var i in population.female) {
+            population.female[i].age++;
+        }
+    }
+    age_based_death_discrete() {
+        for (var i = population.male.length - 1; i >= 0; i--) {
+            if (population.male[i].age > 0) {
+                population.male.splice(i, 1);
+            }
+        }
+        for (var i = population.female.length - 1; i >= 0; i--) {
+            if (population.female[i].age > 0) {
+                population.female.splice(i, 1);
+            }
+        }
+    }
+};
+
+class simulation {
+    constructor(capacity, release_ratio, low_density_growth_rate, drive_efficiency, r2, r1, drive_fitness, max_attempts, egg, max_cyc) {
+        // Definition of "population":
+        // population = { male: [], female: [] };
+        // The subarray are filled with "individual"s
+        this.population = new population();
+        this.cycle = 0; // generation
+        this.capacity = capacity; // default 2500
+        this.release_size = capacity * release_ratio; // default 2500
+        this.low_density_growth_rate = low_density_growth_rate; // default 6.0
+        this.drive_efficiency = drive_efficiency; // default 0.85
+        this.resistance_2_formation_rate_if_not_converted = r2; // if not converted; default 0.5
+        this.resistance_1_formation_rate_if_not_resistance_2 = r1; // if not to r2; default 0.01
+        this.drive_fitness = drive_fitness; // default 0.9
+        this.max_attempts_to_find_a_mate = max_attempts; // default 10
+        this.egg_num_per_female = egg; // default 50
+        this.max_generations = max_cyc; // default 100
+    }
+
+};
+
+// Sort genotype strings
+const genotype_sort = { "d": 1, "R": 2, "r": 3, "+": 10 };
+
+// Initialize
+function homing_suppression_drive_panmictic_demo_initialize() {
+
+}
+
 function homing_suppression_drive_panmictic_demo() {
     // Female sterile homing drive without resistance
     // Clear output
@@ -77,19 +160,6 @@ function homing_suppression_drive_panmictic_demo() {
         homing_supp_pan_chart.update();
     }, 100);
 
-    // Parameters
-    population = { male: [], female: [] };
-    var capacity = 2500;
-    var release_size = capacity;
-    var low_density_growth_rate = 6.0;
-    var drive_efficiency = 0.85;
-    var resistance_2_formation_rate_if_not_converted = 0.5; // if not converted
-    var resistance_1_formation_rate_if_not_resistance_2 = 0.01; // if not to r2
-    var drive_fitness = 0.9;
-    var max_attempts_to_find_a_mate = 10;
-    var egg_num_per_female = 50;
-    var max_generations = 100;
-    var cyc = 0;
     var exit_flag = 0;
     var stats = [];
     let out = "Initial parameters: " + JSON.stringify({
@@ -105,14 +175,7 @@ function homing_suppression_drive_panmictic_demo() {
         "max_generations": max_generations
     })
     console.log(out);
-    append_output(hsdp_output, out + "<br>");
-
-    function initialize_population() {
-        for (var i = 1; i <= capacity / 2; i++) {
-            population.male.push(new individual("male", 0, "++"));
-            population.female.push(new individual("female", 0, "++"));
-        }
-    }
+    // append_output(hsdp_output, out + "<br>");
 
     function release_drive_carriers() {
         // Only male drive carriers are released
@@ -131,12 +194,6 @@ function homing_suppression_drive_panmictic_demo() {
             return true;
         }
         return false;
-    }
-
-    function fitness(ind) {
-        if (ind.genotype == "dd") return drive_fitness;
-        if (ind.genotype == "d+" || ind.genotype == "dr" || ind.genotype == "dR") return Math.sqrt(drive_fitness);
-        return 1.0;
     }
 
     function select_mate() {
@@ -167,15 +224,6 @@ function homing_suppression_drive_panmictic_demo() {
             } else return ["d", "+"];
         }
         return ind.genotype.split('');
-    }
-
-    function mature() {
-        for (var i in population.male) {
-            population.male[i].age++;
-        }
-        for (var i in population.female) {
-            population.female[i].age++;
-        }
     }
 
     function cross(mother, father) {
@@ -210,20 +258,8 @@ function homing_suppression_drive_panmictic_demo() {
         }
     }
 
-    function death() {
-        for (var i = population.male.length - 1; i >= 0; i--) {
-            if (population.male[i].age > 0) {
-                population.male.splice(i, 1);
-            }
-        }
-        for (var i = population.female.length - 1; i >= 0; i--) {
-            if (population.female[i].age > 0) {
-                population.female.splice(i, 1);
-            }
-        }
-    }
-
     function output_stats() {
+        // d,R,r,w(+)
         var male_dd = 0,
             female_dd = 0,
             male_dw = 0,
@@ -391,11 +427,6 @@ function homing_suppression_drive_panmictic_demo() {
             homing_supp_pan_chart.update();
         }, 100);
 
-
-
-        /*if (output_obj["rate_dd"] == 1.0 || output_obj["population_size"] == 0 || output_obj["male"] == 0 || output_obj["female"] == 0) {
-            exit_flag = 1;
-        }*/
         if (cyc && output_obj["population_size"] == 0) {
             exit_flag = 1;
         } else if (cyc && output_obj["total_has_d"] == 0) {
