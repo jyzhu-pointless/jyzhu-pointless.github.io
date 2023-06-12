@@ -136,7 +136,6 @@ class simulation {
         this.egg_num_per_female = egg; // default 50
         this.max_generations = max_cyc; // default 100
     }
-
 };
 
 // Sort genotype strings
@@ -144,6 +143,10 @@ const genotype_sort = { "d": 1, "R": 2, "r": 3, "+": 10 };
 
 // Initialize
 function homing_suppression_drive_panmictic_demo_initialize() {
+    // Set `hsdp_sim` as the global variable
+    hsdp_sim = new simulation(capacity, release_ratio, low_density_growth_rate, drive_efficiency, r2, r1, drive_fitness, max_attempts, egg, max_cyc);
+
+
 
 }
 
