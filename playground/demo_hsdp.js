@@ -1,7 +1,5 @@
-/**
- * @description: Gene drive demonstrations in HTML and JavaScript
- * @author: Jinyu Zhu
- */
+// A web framework for gene drive simulations
+// author: Jinyu Zhu
 
 // DOM
 function append_output(dom, text) {
@@ -79,13 +77,13 @@ function homing_suppression_drive_panmictic_demo() {
 
     // Parameters
     population = { male: [], female: [] };
-    var capacity = 2500;
-    var release_size = capacity;
-    var low_density_growth_rate = 6.0;
-    var drive_efficiency = 0.85;
-    var resistance_2_formation_rate_if_not_converted = 0.5; // if not converted
+    var capacity = document.getElementById("hsdp-capacity").value;
+    var release_size = capacity * document.getElementById("hsdp-drop").value;
+    var low_density_growth_rate = document.getElementById("hsdp-ldgr").value;
+    var drive_efficiency = document.getElementById("hsdp-dcr").value;
+    var resistance_2_formation_rate_if_not_converted = document.getElementById("hsdp-r2").value; // if not converted
     var resistance_1_formation_rate_if_not_resistance_2 = 0.01; // if not to r2
-    var drive_fitness = 0.9;
+    var drive_fitness = document.getElementById("hsdp-fit").value;
     var max_attempts_to_find_a_mate = 10;
     var egg_num_per_female = 50;
     var max_generations = 100;

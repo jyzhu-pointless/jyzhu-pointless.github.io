@@ -1,9 +1,9 @@
-var ctx = document.getElementById("homing_suppression_drive_panmictic_demo_chart");
-var x = [];
-var homing_supp_pan_chart = new Chart(ctx, {
+var ctx_ridd = document.getElementById("ridl_drive_panmictic_demo_chart");
+var x_ridd = [];
+var ridd_pan_chart = new Chart(ctx_ridd, {
     type: "line",
     data: {
-        labels: x,
+        labels: x_ridd,
         datasets: [{
             label: "Size / capacity",
             data: []
@@ -11,10 +11,7 @@ var homing_supp_pan_chart = new Chart(ctx, {
             label: "Drive frequency",
             data: []
         }, {
-            label: "Resistance 2 frequency",
-            data: []
-        }, {
-            label: "Resistance 1 frequency",
+            label: "Resistance frequency",
             data: []
         }]
     },
@@ -43,4 +40,4 @@ var homing_supp_pan_chart = new Chart(ctx, {
         responsiveAnimationDuration: 0 // 调整大小后的动画持续时间
     }
 });
-var hsdp_output = document.getElementById("homing_suppression_drive_panmictic_demo_result");
+var ridd_output = document.getElementById("ridl_drive_panmictic_demo_result");
