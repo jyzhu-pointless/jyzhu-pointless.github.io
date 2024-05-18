@@ -11,7 +11,7 @@
   [School of Life Sciences](https://bio.pku.edu.cn/),
   [Peking University](https://www.pku.edu.cn/) `2020~2024 (expected)`
 - **High school student**,
-  [the High School Attached to Hunan Normal University](https://www.hnsdfz.org)</a>
+  [the High School Attached to Hunan Normal University](https://www.hnsdfz.org)
   `2017~2020`
 
 ## Publications
