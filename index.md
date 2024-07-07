@@ -8,7 +8,7 @@
 ## Education
 
 - **Ph.D. Student in Biology**,
-  [Center for Life Sciences](http://cls.pku.edu.cn),
+  [Center for Life Sciences](http://www.cls.edu.cn/),
   [Peking University](https://www.pku.edu.cn/) `2024~Present`
 - **B.Eng. in Bioinformatics**,
   [School of Life Sciences](https://bio.pku.edu.cn/),
