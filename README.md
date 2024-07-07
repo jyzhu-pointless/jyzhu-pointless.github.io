@@ -1,3 +1,3 @@
 # jyzhu-pointless.github.io
 
-Personal homepage for Jinyu Zhu
+[Personal homepage](https://jyzhu-pointless.github.io/) for Jinyu Zhu
