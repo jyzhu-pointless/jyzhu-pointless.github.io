@@ -29,6 +29,6 @@
 
 ## Awards
 
-- 🏅 **Best Poster Presentor**, 10th Symposium for [Undergraduate Honors Program in Biology (UHPB)](http://web.bio.pku.edu.cn/UHPB/) `Oct 2023`
+- 🏅 **Best Poster Presenter**, 10th Symposium for [Undergraduate Honors Program in Biology (UHPB)](http://web.bio.pku.edu.cn/UHPB/) `Oct 2023`
 - 🏆 **Yang Xin Lotus Virtue Awards**, Peking University (undergraduate scholarship) `Dec 2022`
 - 🥈 **Silver Award**, [28th China National Biology Olympiad](http://czs.ioz.cas.cn/swxjs/qgjs/201908/t20190820_510064.html) `Aug 2019`
