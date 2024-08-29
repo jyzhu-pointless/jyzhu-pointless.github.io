@@ -28,7 +28,7 @@
 
 ## Seminars
 
-- $\color{green}\textbf{NEW}$ `Aug 26` Talk at the [XXVII International Congress of Entomology (ICE2024)](https://ice2024.org/): **Population suppression with dominant female-lethal alleles is boosted by homing gene drive**. [Slides](static/Jinyu_ICE2024.pdf)
+- $$ \color{green}\textbf{NEW} $$ `Aug 26` Talk at the [XXVII International Congress of Entomology (ICE2024)](https://ice2024.org/): **Population suppression with dominant female-lethal alleles is boosted by homing gene drive**. [Slides](static/Jinyu_ICE2024.pdf)
 
 ## Projects
 
