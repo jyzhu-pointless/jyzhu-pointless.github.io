@@ -19,14 +19,14 @@ E-mail: <jyzhu_2020@stu.pku.edu.cn>.
 
 ## Publications
 
-("*" indicates equal contribution)
+> ("*" indicates equal contribution)
 
 1. `Preprint` **Zhu J**\*, Chen J\*, Liu Y\*, Xu X, Champer J. [Population suppression with dominant female-lethal alleles is boosted by homing gene drive](https://www.biorxiv.org/content/10.1101/2023.12.05.570109v1). *bioRxiv*, December 2023.  
   (under revision & peer review at *BMC Biology*)
 
 ## Seminars
 
-- 🆕 `Aug 26` Talk at the [XXVII International Congress of Entomology (ICE2024, Kyoto)](https://ice2024.org/): **Population suppression with dominant female-lethal alleles is boosted by homing gene drive**. [Slides](static/Jinyu_ICE2024.pdf)
+- 🆕 Talk at the [XXVII International Congress of Entomology (ICE2024, Kyoto)](https://ice2024.org/): **Population suppression with dominant female-lethal alleles is boosted by homing gene drive**. `Aug 2024` [Slides](static/Jinyu_ICE2024.pdf)
 
 ## Projects
 
