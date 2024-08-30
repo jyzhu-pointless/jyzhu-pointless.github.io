@@ -1,6 +1,6 @@
 ## Hi there 👋
 
-I am a **Ph.D. Student** at the [Champer Lab](https://jchamper.github.io/), [Center for Life Sciences](http://www.cls.edu.cn/), Peking University, China. I received a **B.Eng. in Bioinformatics** at the [School of Life Sciences](https://bio.pku.edu.cn/), [Peking University](https://www.pku.edu.cn/) in July 2024. I am interested in **computational modeling of gene drives**.
+I am a **Ph.D. Student** at the [Champer Lab](https://jchamper.github.io/), [Center for Life Sciences](http://www.cls.edu.cn/), [Peking University](https://www.pku.edu.cn/). I am interested in **computational modeling of gene drives**.
 
 E-mail: <jyzhu_2020@stu.pku.edu.cn>.
 
