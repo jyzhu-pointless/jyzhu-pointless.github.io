@@ -1,9 +1,14 @@
-theme: minima
+remote_theme: jekyll/minima
+
 minima:
   skin: solarized
+
 plugins:
 - jekyll-remote-theme
+
 title: Jinyu Zhu
+
 kramdown:
   math_engine: MathJax
+
 description: Personal homepage for Jinyu Zhu
