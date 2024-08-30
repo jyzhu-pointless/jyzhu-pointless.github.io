@@ -2,6 +2,8 @@ remote_theme: jekyll/minima
 
 minima:
   skin: solarized
+  social_links:
+  - { platform: github,  user_url: "https://github.com/jyzhu-pointless" }
 
 plugins:
 - jekyll-remote-theme
