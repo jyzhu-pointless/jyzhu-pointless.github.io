@@ -28,7 +28,7 @@ E-mail: <jyzhu_2020@stu.pku.edu.cn>.
 
 ## Seminars
 
-> Click the seminar titles to get the slides in PDF format.
+> Click the titles to get presentation slides in PDF format.
 
 - 🆕 Talk at the [**XXVII International Congress of Entomology**](https://ice2024.org/), Kyoto: [Population suppression with dominant female-lethal alleles is boosted by homing gene drive](static/Jinyu_ICE2024.pdf). `Aug 2024` 
 
