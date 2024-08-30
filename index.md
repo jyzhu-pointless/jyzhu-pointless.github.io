@@ -1,4 +1,6 @@
-# Jinyu Zhu
+---
+title: Jinyu Zhu
+---
 
 ## Hi there 👋
 
