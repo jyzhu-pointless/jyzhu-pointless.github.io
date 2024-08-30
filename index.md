@@ -6,7 +6,7 @@ E-mail: <jyzhu_2020@stu.pku.edu.cn>.
 
 ## Education
 
-- **Ph.D. Student in Biology**,
+- **Ph.D. Student in Integrative Life Sciences**,
   [Center for Life Sciences](http://www.cls.edu.cn/),
   [Peking University](https://www.pku.edu.cn/) `2024~Present`
 - **B.Eng. in Bioinformatics**,
