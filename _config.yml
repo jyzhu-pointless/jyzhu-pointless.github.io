@@ -1,4 +1,6 @@
 theme: minima
+minima:
+  skin: solarized
 plugins:
 - jekyll-remote-theme
 title: Jinyu Zhu
