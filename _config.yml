@@ -1,4 +1,4 @@
-remote_theme: pages-themes/hacker@v0.2.0
+theme: minima
 plugins:
 - jekyll-remote-theme
 title: Jinyu Zhu
