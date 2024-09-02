@@ -22,9 +22,9 @@ E-mail: <jyzhu_2020@stu.pku.edu.cn>.
 > ("*" indicates equal contribution)
 
 1. `Preprint` **Zhu J**\*, Chen J\*, Liu Y\*, Xu X, Champer J. [Population suppression with dominant female-lethal alleles is boosted by homing gene drive](https://www.biorxiv.org/content/10.1101/2023.12.05.570109v1). *bioRxiv*, December 2023.  
-  (under revision & peer review at *BMC Biology*)
+  (accepted at *BMC Biology*)
 
-## Seminars
+## Presentations
 
 > Click the presentation titles to get the slides in PDF format. **Reprinting, excerpting, copying, and translating are PROHIBITED without formal permission from the author.**
 
