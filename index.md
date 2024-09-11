@@ -8,6 +8,10 @@ I am a **Ph.D. Student** at the [Champer Lab](https://jchamper.github.io/), [Cen
 
 E-mail: <jyzhu_2020@stu.pku.edu.cn>.
 
+### NEWS
+
+**My first paper is now published! see [here](./#Publications).**
+
 ## Education
 
 - **Ph.D. Student in Integrative Life Sciences**,
@@ -19,10 +23,10 @@ E-mail: <jyzhu_2020@stu.pku.edu.cn>.
 
 ## Publications
 
-> ("*" indicates equal contribution)
+> ("+" indicates equal contribution)
 
-1. `Preprint` **Zhu J**\*, Chen J\*, Liu Y\*, Xu X, Champer J. [Population suppression with dominant female-lethal alleles is boosted by homing gene drive](https://www.biorxiv.org/content/10.1101/2023.12.05.570109v1). *bioRxiv*, December 2023.  
-  (accepted at *BMC Biology*)
+1. 🆕 **Zhu, J.+**, Chen, J.+, Liu, Y.+ et al. [Population suppression with dominant female-lethal alleles is boosted by homing gene drive](https://doi.org/10.1186/s12915-024-02004-x). *BMC Biol* 22, 201 (2024). 
+
 
 ## Presentations
 
