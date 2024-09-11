@@ -8,10 +8,6 @@ I am a **Ph.D. Student** at the [Champer Lab](https://jchamper.github.io/), [Cen
 
 E-mail: <jyzhu_2020@stu.pku.edu.cn>.
 
-### NEWS
-
-**My first paper is now published! see [here](./#Publications).**
-
 ## Education
 
 - **Ph.D. Student in Integrative Life Sciences**,
