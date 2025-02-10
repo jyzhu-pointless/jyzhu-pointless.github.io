@@ -1,5 +1,6 @@
 ---
 title: Jinyu Zhu
+layout: home
 ---
 
 ## Hi there 👋
