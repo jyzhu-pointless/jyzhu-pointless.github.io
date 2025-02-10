@@ -23,7 +23,7 @@ Interdisciplinary approaches are involved in addressing these challenges. While 
 </figure>
 
 <figure>
-<img alt="confinement of gene drives" src="static/confinement.jpg"></img>
+<img alt="confinement of gene drives" src="static/Confinement.png"></img>
 <figcaption>Confinement of gene drives, cited from <a href="https://www.cell.com/trends/genetics/fulltext/S0168-9525(22)00040-3" target="_blank">Wang GH, <em>et al.</em> <em>Trends Genet</em> (2022)</a></figcaption>
 </figure>
 
