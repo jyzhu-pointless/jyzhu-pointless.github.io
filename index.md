@@ -18,12 +18,12 @@ Several technical problem must be addressed to implement and deploy effective ge
 Interdisciplinary approaches are involved in addressing these challenges. While experimental methods are employed to construct and validate successful gene drives in model organisms like *Drosophila melanogaster* and other target species, computational modeling based on population genetics and ecology is especially important and irreplacable in predicting the dynamics of gene drives in the wild population over time, enabling the assessment of their potential impact and risks.
 
 <figure>
-<img alt="gene drive illustration" src="static/Gene_Drive.png"></img>
+<img alt="gene drive illustration" src="static/Gene_Drive.png" />
 <figcaption>Principle of gene drives, cited from <a href="https://en.wikipedia.org/wiki/Gene_drive" target="_blank">Wikipedia</a></figcaption>
 </figure>
 
 <figure>
-<img alt="confinement of gene drives" src="static/Confinement.png"></img>
+<img alt="confinement of gene drives" src="static/Confinement.png" />
 <figcaption>Confinement of gene drives, cited from <a href="https://www.cell.com/trends/genetics/fulltext/S0168-9525(22)00040-3" target="_blank">Wang GH, <em>et al.</em> <em>Trends Genet</em> (2022)</a></figcaption>
 </figure>
 
