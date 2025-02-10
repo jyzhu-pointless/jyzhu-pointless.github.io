@@ -8,7 +8,7 @@ minima:
       url: "https://github.com/jyzhu-pointless"
     - title: email
       icon: email
-      uri: "mailto:jyzhu_2020@stu.pku.edu.cn"
+      url: "mailto:jyzhu_2020@stu.pku.edu.cn"
 
 plugins:
 - jekyll-remote-theme
