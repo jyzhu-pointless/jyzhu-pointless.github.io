@@ -10,6 +10,11 @@ plugins:
 
 title: Jinyu Zhu
 
+author: 
+  name: Jinyu Zhu
+  email: jyzhu_2020@stu.pku.edu.cn
+  url: https://jyzhu-pointless.github.io/
+
 kramdown:
   math_engine: MathJax
 
