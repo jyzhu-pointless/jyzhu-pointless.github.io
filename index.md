@@ -5,38 +5,33 @@ layout: home
 
 ## Hi there 👋
 
-I am a **Ph.D. Student** at the [Champer Lab](https://jchamper.github.io/), [Center for Life Sciences](http://www.cls.edu.cn/), [Peking University](https://www.pku.edu.cn/). I am interested in **computational modeling of gene drives**.
+I am a **Ph.D. Student** at the [Champer Lab](https://jchamper.github.io/), [Center for Life Sciences](http://www.cls.edu.cn/), [Peking University](https://www.pku.edu.cn/). I received a **B.Eng. in Bioinformatics** at [School of Life Sciences](https://www.bio.pku.edu.cn/), [Peking University](https://www.pku.edu.cn/) in 2020. I am interested in **computational modeling of gene drives**.
 
 E-mail: <jyzhu_2020@stu.pku.edu.cn>.
 
-## Education
+## Research Interest
 
-- **Ph.D. Student in Integrative Life Sciences**,
-  [Center for Life Sciences](http://www.cls.edu.cn/),
-  [Peking University](https://www.pku.edu.cn/) `2024~Present`
-- **B.Eng. in Bioinformatics**,
-  [School of Life Sciences](https://bio.pku.edu.cn/),
-  [Peking University](https://www.pku.edu.cn/) `2020~2024`
+Gene drive alleles can bias their inheritance to rapidly spread through a population. Engineering gene drives can modify the population with desired traits or suppress the population. They are promising in combating vector-borne diseases such as malaria and dengue by preventing their transmission among the vector species. They are also useful in controlling agricultural pests and removing invasive species, thereby conserving target species.
+
+Several technical problem must be addressed to implement and deploy effective gene drives. A key challenge is to develop high-effciency and robust gene drives by reducing the formation of resistance alleles and increasing the chance of drive conversion. Another consideration on gene drives is to make them "controllable", which means that the spread of the drive should only be in the target population, and preferably eliminated from the population once the release stops. This is especially important in terms of socialpolitical limitations.
+
+Interdisciplinary approaches are involved in addressing these challenges. While experimental methods are employed to construct and validate successful gene drives in model organisms like *Drosophila melanogaster* and other target species, computational modeling based on population genetics and ecology is especially important and irreplacable in predicting the dynamics of gene drives in the wild population over time, enabling the assessment of their potential impact and risks.
+
+[![gene drive illustration](static/Gene_Drive.png)](https://en.wikipedia.org/wiki/Gene_drive)
+
+> Principle of gene drives, cited from Wikipedia
+
+[![confinement of gene drives](static/confinement.jpg)](https://www.cell.com/trends/genetics/fulltext/S0168-9525(22)00040-3)
+
+> Confinement of gene drives, cited from Wang GH, *et al.* *Trends Genet* (2022)
 
 ## Publications
 
-> ("+" indicates equal contribution)
+("\*": equal contribution)
 
-1. 🆕 **Zhu, J.+**, Chen, J.+, Liu, Y.+ et al. [Population suppression with dominant female-lethal alleles is boosted by homing gene drive](https://doi.org/10.1186/s12915-024-02004-x). *BMC Biol* 22, 201 (2024). 
-
-
-## Presentations
-
-> Click the presentation titles to get the slides in PDF format. **Reprinting, excerpting, copying, and translating are PROHIBITED without formal permission from the author.**
-
-- 🆕 Talk at the [XXVII International Congress of Entomology](https://ice2024.org/) (Kyoto, Japan): [**Population suppression with dominant female-lethal alleles is boosted by homing gene drive**](static/Jinyu_ICE2024.pdf). `Aug 2024` 
+1. 🆕 **Zhu, J.\***, Chen, J.\*, Liu, Y.\*, *et al*. [Population suppression with dominant female-lethal alleles is boosted by homing gene drive](https://doi.org/10.1186/s12915-024-02004-x). *BMC Biol* **22**, 201 (2024). **[[Presentation slides]](static/Jinyu_ICE2024.pdf)**
 
 ## Projects
 
-- **[Gene Drive Playground](https://jyzhu-pointless.github.io/Gene-drive-playground/)**, online interactive demonstrations of different gene drives. (still updating ...)
-
-## Awards
-
-- 🏅 **Best Poster Presenter**, 10th Symposium for [Undergraduate Honors Program in Biology (UHPB)](http://web.bio.pku.edu.cn/UHPB/) `Oct 2023`
-- 🏆 **Yang Xin Lotus Virtue Awards**, Peking University (undergraduate scholarship) `Dec 2022`
-- 🥈 **Silver Medal** (Second Prize), [28th China National Biology Olympiad](http://czs.ioz.cas.cn/swxjs/qgjs/201908/t20190820_510064.html) `Aug 2019`
+- **[Gene Drive Playground](https://jyzhu-pointless.github.io/Gene-drive-playground/)**, online interactive demonstrations of different gene drives.
+- (developing) Maximum-likelihood estimation frameworks for measuring the genetic parameters of gene drives in *Anopheles* population.
