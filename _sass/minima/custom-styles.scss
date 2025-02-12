@@ -6,6 +6,7 @@ figure {
 
 figure img {
     display: inline-block; /* 确保图片被视为块级元素 */
+    width: 100%;
     max-width: 800px;
 }
 
