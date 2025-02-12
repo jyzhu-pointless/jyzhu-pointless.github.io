@@ -1,9 +1,13 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
 figure {
-    text-align: center;
+    text-align: center; /* 使图片居中 */
 }
 
-img {
-    max-width: 800px;
+figure img {
+    display: inline-block; /* 确保图片被视为块级元素 */
+}
+
+figure figcaption {
+    text-align: left; /* 使图注左对齐 */
 }
