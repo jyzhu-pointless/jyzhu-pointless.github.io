@@ -13,3 +13,8 @@ figure img {
 figure figcaption {
     text-align: left; /* 使图注左对齐 */
 }
+
+/* 保证垂直滚动条始终存在，避免不同页面因滚动条显隐导致内容水平微移 */
+html {
+    overflow-y: scroll;
+}

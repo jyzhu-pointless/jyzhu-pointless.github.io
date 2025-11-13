@@ -15,6 +15,12 @@ plugins:
 
 title: Jinyu Zhu
 
+header_pages:
+- index.md
+- posts/index.md
+- gene-drive-playground.html
+- friends/index.md
+
 author: 
   name: Jinyu Zhu
   email: jyzhu_2020@stu.pku.edu.cn

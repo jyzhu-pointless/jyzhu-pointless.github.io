@@ -1,5 +1,5 @@
 ---
-title: Jinyu Zhu
+title: Home
 layout: home
 ---
 
@@ -11,20 +11,20 @@ E-mail: <jyzhu_2020@stu.pku.edu.cn>.
 
 ## Research Interest
 
-Gene drive alleles can bias their inheritance to rapidly spread through a population. Engineering gene drives can modify the population with desired traits or suppress the population. They are promising in combating vector-borne diseases such as malaria and dengue by preventing their transmission among the vector species. They are also useful in controlling agricultural pests and removing invasive species, thereby conserving target species.
+[**Gene drive**](https://en.wikipedia.org/wiki/Gene_drive) alleles can bias their inheritance to rapidly spread through a population. Engineering gene drives can **modify** the population with desired traits or **suppress** the population. They are promising in combating vector-borne diseases such as malaria and dengue by preventing their transmission among the vector species. They are also useful in controlling agricultural pests and removing invasive species, thereby conserving target species.
 
-Several technical problems must be addressed to implement and deploy effective gene drives. A key challenge is to develop high-effciency and robust gene drives by reducing the formation of resistance alleles and increasing the chance of drive conversion. Another consideration on gene drives is to make them "controllable", which means that the spread of the drive should only be in the target population, and preferably eliminated from the population once the release stops. This is especially important in terms of socialpolitical limitations.
+Several technical problems must be addressed to implement and deploy effective gene drives. A key challenge is to develop high-effciency and robust gene drives by reducing the formation of **resistance alleles** and increasing the chance of **drive conversion**. Another consideration on gene drives is to make them **"controllable"**, which means that the spread of the drive should only be in the target population, and preferably eliminated from the population once the release stops. This is especially important in terms of socialpolitical limitations.
 
-Interdisciplinary approaches are involved in overcoming these challenges. While experimental methods are employed to construct and validate successful gene drives in model organisms like *Drosophila melanogaster* and other target species, computational modeling based on population genetics and ecology is especially important and irreplacable in predicting the dynamics of gene drives in the wild population over time, enabling the assessment of their potential impact and risks.
+Interdisciplinary approaches are involved in overcoming these challenges. While **experimental methods** are employed to construct and validate successful gene drives in model organisms like *Drosophila melanogaster* and other target species, **computational modeling** based on population genetics and ecology is especially important and irreplacable in predicting the dynamics of gene drives in the wild population over time, enabling the assessment of their potential impact and risks.
 
 <figure>
 <img alt="gene drive illustration" src="static/Gene_Drive.png" />
-<figcaption>Principle of gene drives, cited from <a href="https://en.wikipedia.org/wiki/Gene_drive" target="_blank">Wikipedia</a></figcaption>
+<figcaption>Principle of gene drives, cited from <a href="https://en.wikipedia.org/wiki/Gene_drive">Wikipedia</a></figcaption>
 </figure>
 
 <figure>
 <img alt="confinement of gene drives" src="static/Confinement.png" />
-<figcaption>Confinement of gene drives, cited from <a href="https://www.cell.com/trends/genetics/fulltext/S0168-9525(22)00040-3" target="_blank">Wang GH, <em>et al.</em> <em>Trends Genet</em> (2022)</a></figcaption>
+<figcaption>Confinement of gene drives, cited from <a href="https://www.cell.com/trends/genetics/fulltext/S0168-9525(22)00040-3">Wang GH, <em>et al.</em> <em>Trends Genet</em> (2022)</a></figcaption>
 </figure>
 
 ## Publications
@@ -36,4 +36,4 @@ Interdisciplinary approaches are involved in overcoming these challenges. While 
 ## Projects
 
 - **[Gene Drive Playground](https://jyzhu-pointless.github.io/Gene-drive-playground/)**, online interactive demonstrations of different gene drives.
-- (developing) Maximum-likelihood estimation frameworks for measuring the genetic parameters of gene drives in *Anopheles* population.
+- Fitness inference methods for gene drives in *Anopheles* population (webUI coming soon).

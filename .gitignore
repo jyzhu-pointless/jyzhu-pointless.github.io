@@ -1,1 +1,21 @@
 .DS_Store
+
+# Jekyll build output
+_site/
+
+# SASS cache
+.sass-cache/
+
+# Jekyll metadata
+.jekyll-metadata
+
+# Bundler / gems
+.bundle/
+vendor/bundle/
+
+# Temporary files
+*.swp
+*.swx
+*~
+.vscode/
+
