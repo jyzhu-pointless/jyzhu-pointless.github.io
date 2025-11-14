@@ -18,3 +18,142 @@ figure figcaption {
 html {
     overflow-y: scroll;
 }
+
+/* Responsive collapsible navigation (mobile hamburger) */
+.site-header .wrapper {
+    position: relative; /* kept for absolutely positioned toggle */
+    display: flex;
+    align-items: center; /* vertically center title and nav */
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.site-header { padding-top: 0.5rem; padding-bottom: 0; }
+
+
+/*
+    If you instead want the nav to align to the bottom of the header,
+    change the wrapper's align-items to `flex-end` and increase padding-top
+    so the header has enough height, e.g.:
+
+    .site-header .wrapper { align-items: flex-end; }
+    .site-header { padding-top: 1.2rem; padding-bottom: 0.4rem; }
+
+*/
+
+/* Hide native checkbox visually but keep it accessible */
+.nav-toggle {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.site-header .wrapper .nav-toggle-label {
+    display: none !important; /* hidden by default on desktop; important to override theme rules */
+}
+
+/* Icon-based toggle: use inline SVGs (bars and close) */
+.nav-toggle-label .icon {
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.6rem;
+    vertical-align: middle;
+    color: inherit;
+    transition: opacity 0.18s ease, transform 0.18s ease;
+}
+.nav-toggle-label .icon-close { display: none; }
+
+/* Default desktop behavior: show nav horizontally */
+.site-nav {
+    display: block;
+}
+
+/* Ensure nav is right-aligned in the header when using flex layout */
+.site-header .wrapper > .site-nav {
+    margin-left: auto;
+    flex: 0 0 auto;
+}
+
+/* Ensure title doesn't expand and push nav out of place */
+.site-header .wrapper > .site-title {
+    flex: 0 0 auto;
+}
+
+.site-nav .trigger {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Mobile: hide nav links by default, show via toggle */
+@media (max-width: $on-palm) {
+    /* Show the hamburger as an in-flow flex item so align-items:center centers it reliably */
+    .site-header .wrapper .nav-toggle-label {
+        display: flex !important;
+        position: static;
+        margin-left: auto; /* push to right */
+        height: 100%;
+        padding: 0 0.25rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* hide the menu container by default on small screens; show only when toggled */
+    .site-header .wrapper .site-nav {
+        display: none;
+        position: absolute;
+        right: 0.5rem;
+        top: calc(100% - 1px);
+        width: auto;
+        min-width: 10rem;
+        background: #fff; /* ensure readable background for the menu */
+        border-radius: 6px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+        overflow: hidden;
+        z-index: 50;
+        padding: 0.25rem 0;
+    }
+
+    .site-nav .trigger {
+        display: none;
+        flex-direction: column;
+        background: transparent;
+        padding: 0.5rem 0;
+        margin: 0; /* remove top margin to avoid gap */
+    }
+
+    /* When checkbox is checked, show the menu and its trigger items */
+    #nav-toggle:checked ~ .site-nav {
+        display: block;
+    }
+    #nav-toggle:checked ~ .site-nav .trigger {
+        display: flex;
+    }
+
+    /* Swap icons when open (use !important to override other rules) */
+    #nav-toggle:checked + .nav-toggle-label .icon-bars { display: none !important; }
+    #nav-toggle:checked + .nav-toggle-label .icon-close { display: inline-block !important; }
+
+    /* Make links full width on mobile */
+    .site-nav .trigger .page-link {
+        display: block;
+        padding: 0.5rem 0.75rem;
+    }
+}
+
+/* Remove extra top border/line above the expanded mobile menu */
+@media (max-width: $on-palm) {
+    /* The site or theme may add borders to nav/header; ensure the floating menu has no top border */
+    .site-header .wrapper .site-nav {
+        border-top: none !important;
+        box-shadow: none !important;
+    }
+
+    /* When menu is open, also force the trigger container to have no top border */
+    #nav-toggle:checked ~ .site-nav,
+    #nav-toggle:checked ~ .site-nav .trigger {
+        border-top: none !important;
+        box-shadow: none !important;
+    }
+}

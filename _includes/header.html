@@ -6,6 +6,18 @@
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
 
     {%- if page_paths -%}
+      <!-- Responsive nav toggle (hidden on desktop) -->
+      <input id="nav-toggle" class="nav-toggle" type="checkbox" aria-label="Toggle navigation" />
+      <label class="nav-toggle-label" for="nav-toggle" aria-hidden="true">
+        <!-- Use inline SVG icons for hamburger and close to ensure crisp rendering -->
+        <svg class="icon icon-bars" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="24" height="24">
+          <path d="M3 6h18v2H3zM3 11h18v2H3zM3 16h18v2H3z" fill="currentColor" />
+        </svg>
+        <svg class="icon icon-close" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="24" height="24">
+          <path d="M18.3 5.71L12 12l6.3 6.29-1.41 1.42L10.59 13.4 4.29 19.71 2.88 18.3 9.18 12 2.88 5.71 4.29 4.29 10.59 10.6 16.88 4.29z" fill="currentColor" />
+        </svg>
+      </label>
+
       <nav class="site-nav">
         <div class="trigger">
           {%- for path in page_paths -%}
