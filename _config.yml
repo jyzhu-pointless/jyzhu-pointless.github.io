@@ -15,6 +15,9 @@ plugins:
 
 title: Jinyu Zhu
 
+# Timezone for rendering post dates on GitHub Pages (set to China Standard Time)
+timezone: Asia/Shanghai
+
 header_pages:
 - index.md
 - posts/index.md
