@@ -21,6 +21,7 @@ timezone: Asia/Shanghai
 header_pages:
 - index.md
 - posts/index.md
+- natal.html
 - gene-drive-playground.html
 - friends/index.md
 

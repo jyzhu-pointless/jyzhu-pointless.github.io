@@ -31,9 +31,9 @@ Interdisciplinary approaches are involved in overcoming these challenges. While 
 
 ("\*": equal contribution)
 
-1. 🆕 **Zhu, J.\***, Chen, J.\*, Liu, Y.\*, *et al*. [Population suppression with dominant female-lethal alleles is boosted by homing gene drive](https://doi.org/10.1186/s12915-024-02004-x). *BMC Biol* **22**, 201 (2024). **[[Presentation slides]](static/Jinyu_ICE2024.pdf)**
+1. **Zhu, J.\***, Chen, J.\*, Liu, Y.\*, *et al*. [Population suppression with dominant female-lethal alleles is boosted by homing gene drive](https://doi.org/10.1186/s12915-024-02004-x). *BMC Biol* **22**, 201 (2024). **[[Presentation slides]](static/Jinyu_ICE2024.pdf)**
 
 ## Projects
 
+- ⚡️ **[NATAL](https://natal-core.readthedocs.io/en/latest/)**, a Python package for high-performance lifecycle-aware modeling and parameter inference of population genetics, including gene drive simulations.
 - **[Gene Drive Playground](https://jyzhu-pointless.github.io/Gene-drive-playground/)**, online interactive demonstrations of different gene drives.
-- Fitness inference methods for gene drives in *Anopheles* population (webUI coming soon).
