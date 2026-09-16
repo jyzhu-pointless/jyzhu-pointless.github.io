@@ -35,5 +35,5 @@ Interdisciplinary approaches are involved in overcoming these challenges. While 
 
 ## Projects
 
-- ⚡️ **[NATAL](https://natal-core.readthedocs.io/en/latest/)**, a Python package for high-performance lifecycle-aware modeling and parameter inference of population genetics, including gene drive simulations.
+- ⚡️ **[NATAL](https://jyzhu-pointless.github.io/natal-core/)**, a Python package with a Rust-native engine for high-performance lifecycle-aware modeling and parameter inference of population genetics, including gene drive simulations.
 - **[Gene Drive Playground](https://jyzhu-pointless.github.io/Gene-drive-playground/)**, online interactive demonstrations of different gene drives.
